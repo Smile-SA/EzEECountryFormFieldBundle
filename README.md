@@ -1,5 +1,7 @@
 # SmileEzEECountryFormFieldBundle
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/20654b28-5e66-4832-8900-174a23634948/mini.png)](https://insight.sensiolabs.com/projects/20654b28-5e66-4832-8900-174a23634948)
+
 Add new eZStudio Form Field named *Country* displaying select field with country list
 
 ## Installation
