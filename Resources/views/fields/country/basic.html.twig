@@ -1,0 +1,9 @@
+{% extends 'EzSystemsFormBuilderBundle:fields:field.html.twig' %}
+
+{% block input %}
+    <select id="{{ field.id }}" class="ezform-field ezform-dropdown" {% if field.options.multiple.value %}size="{{ field.options.size.value }}" name="{{ field.id }}[]" multiple="multiple"{% endif %}>
+        {% for key, country in field.options.countries.value %}
+            <option value="{{ key }}">{{ country.Name }}</option>
+        {% endfor %}
+    </select>
+{% endblock %}

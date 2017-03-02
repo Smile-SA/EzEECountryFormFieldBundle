@@ -1,0 +1,10 @@
+parameters:
+    smileezee.form_builder.validator.countries.class: Smile\EzEECountryFormFieldBundle\Validators\CountriesValidator
+
+services:
+    smileezee.form_builder.validator.countries:
+        class: '%smileezee.form_builder.validator.countries.class%'
+        arguments:
+            - %ezpublish.fieldType.ezcountry.data%
+        tags:
+            - { name: form_builder.field_validator, alias: countries }

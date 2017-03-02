@@ -1,0 +1,28 @@
+fields:
+    country:
+        identifier: country
+        displayName: Country
+        validators:
+            - { identifier: required, value: 1 }
+            - { identifier: countries, value: %ezpublish.fieldType.ezcountry.data% }
+        options:
+            countries:
+                name: countries
+                type: array
+                value: %ezpublish.fieldType.ezcountry.data%
+                hidden: true
+            multiple:
+                name: Multiple
+                type: bool
+                value: 0
+                required: false
+            size:
+                name: Size (if multiple)
+                type: integer
+                value: 4
+                required: false
+        views:
+            basic:
+                name: Country field
+                thumbnail: /bundles/smileezeecountryformfield/images/thumbnails/country/basic.svg
+                template: SmileEzEECountryFormFieldBundle:fields:country/basic.html.twig
